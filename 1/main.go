@@ -5,7 +5,7 @@ import "fmt"
 func main() {
 	filename := "day1.txt"
 
-	totalDistance, similarity, err := Start(filename)
+	totalDistance, similarity, err := start(filename)
 	if err != nil {
 		fmt.Println("Ошибка:", err)
 		return

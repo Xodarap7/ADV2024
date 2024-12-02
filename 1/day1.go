@@ -78,7 +78,7 @@ func calculateSimilarity(left, right []int) int {
 	return similarity
 }
 
-func Start(filename string) (int, int, error) {
+func start(filename string) (int, int, error) {
 	firstColumn, secondColumn, err := processFile(filename)
 	if err != nil {
 		return 0, 0, err
