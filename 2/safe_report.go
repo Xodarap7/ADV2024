@@ -49,6 +49,8 @@ func isSafeReport(report []string) bool {
 		prevValue, err2 := strconv.Atoi(report[i])
 
 		if err1 != nil || err2 != nil {
+			fmt.Println("Ошибка:", err1)
+			fmt.Println("Ошибка:", err2)
 			return false
 		}
 
